@@ -15,7 +15,7 @@ headers1 = {
     "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
     }
 
-access_token= os.environ["NTQyMjQwNDk0Nzc3MDA4MTI4.DzrIVw.3EHVxaLPYaaXEYB8MB0eXBLbzNk"]
+access_token= os.environ['NTQyMjQwNDk0Nzc3MDA4MTI4.DzrIVw.3EHVxaLPYaaXEYB8MB0eXBLbzNk']
 requests.packages.urllib3.disable_warnings()
 
 
@@ -30,16 +30,16 @@ if __name__ == '__main__':
             if message.content.startswith('!ebay'):
                 old = message.content
                 link = old.replace("!ebay", "").strip()
-                embed = discord.Embed(title="Started!", description="Please wait 3 minutes... <:ebay:542240494777008128>", color=0x00ff00)
+                embed = discord.Embed(title="Started!", description="Please wait 3 minutes... <:ebay:533696455534444556>", color=0x00ff00)
                 await client.send_message(message.channel, embed=embed)
                 await views(link)
 
                 await asyncio.sleep(1)
-                embed = discord.Embed(title="I've just made 50 views on your item!", description="<:ebay:542240494777008128>", color=0x00ff00)
+                embed = discord.Embed(title="I've just made 50 views on your item!", description="<:ebay:533696455534444556>", color=0x00ff00)
                 await client.send_message(message.channel, embed=embed)
                 print("Done")
             if message.content == ('?ebay'):
-                embed = discord.Embed(title="Online!", description ="<:ebay:542240494777008128>", color=0x00ff00)
+                embed = discord.Embed(title="Online!", description ="<:ebay:533696455534444556>", color=0x00ff00)
                 await client.send_message(message.channel, embed=embed)
 
 
