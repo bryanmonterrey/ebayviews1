@@ -65,4 +65,4 @@ async def on_ready():
 
 
 while True:
-    client.run(TOKEN)
+    client.run("NTQyMjQwNDk0Nzc3MDA4MTI4.DzrIVw.3EHVxaLPYaaXEYB8MB0eXBLbzNk")
